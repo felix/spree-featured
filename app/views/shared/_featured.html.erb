@@ -1,8 +1,8 @@
-<% if !featured.empty? %>
-  <h3><%= t(:spree_featured.featured) %></h3>
+<% if !Product.featured.empty? %>
+  <h3><%= t(:featured) %></h3>
 
-  <ul class="featured-listing">
-    <% featured.each do |product| %>
+  <ul class="featured-listing product-listing">
+    <% Product.featured.each do |product| %>
       <% if Spree::Config[:show_zero_stock_product] || product.has_stock? %>
         <li id="product_<%= product.id %>">
         <%= link_to small_image(product), product %>

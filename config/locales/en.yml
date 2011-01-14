@@ -1,5 +1,4 @@
 ---
 en:
-  spree_featured:
-    featured?: Featured?
-    featured: Featured
+  featured?: Featured?
+  featured: Featured
