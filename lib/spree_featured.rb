@@ -12,7 +12,7 @@ module SpreeFeatured
       end
 
       Product.class_eval do
-        scope :featured,:conditions => ["featured = ?", true]
+        scope :featured,:conditions => ['deleted_at is null and featured = ?', true]
       end
 
     end
